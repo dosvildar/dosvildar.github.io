@@ -180,6 +180,58 @@ a:hover {
 
 /* Stack page */
 
+.stack-table {
+    width: 50%;
+}
+
+.stack-table td {
+    padding: 30px;
+}
+
+.stack-table .container {
+    position: relative;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(1, 90, 50);
+  }
+
+.stack-table td:hover .overlay {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .stack-table {
+        width: 80%;
+    }
+
+    .stack-table td {
+        padding: 5px;
+    }
+}
+
 /* Contact page */
 
 .form-submit {
@@ -200,8 +252,8 @@ a:hover {
     width: 50%;
     border: none;
     font-size: 20px;
-    padding: 5px;
     font-family: 'Josefin Sans', sans-serif;
+    padding: 5px;
     padding: 20px 0;
 }
 
